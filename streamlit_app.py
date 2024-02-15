@@ -35,11 +35,6 @@ fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 streamlit.dataframe(fruityvice_normalized)
 
 import urllib3
-resp = urllib3.request("GET", "https://httpbin.org/robots.txt")
-resp.status
-200
-resp.data
-b"User-agent: *\nDisallow: /deny\n"
 
 import snowflake.connector
 
